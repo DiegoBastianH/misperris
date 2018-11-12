@@ -1,0 +1,101 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>    
+    <title>Mis Perris</title>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static 'css/estilos.css' %}" type="text/css">
+</head>
+<body>
+    
+    <div id="Principal">
+    	
+    	<img src="{% static 'img/logo.png' %}"  alt="Logotipo"> 
+
+        <nav>
+            <ul class="selecciones">
+                <li> <a href="{% url 'pagina_principal' %}">inicio</a> </li>
+                <li> <a href="{% url 'pagina_quienessomos' %}">quienes somos</a> </li>
+                <li> <a href="{% url 'pagina_servicios' %}">servicios</a> </li>
+                <li> <a href="{% url 'pagina_contactanos' %}">contactanos</a> </li>	
+                <li> <a href="{% url 'pagina_agregarperro' %}">Agregar Perro</a> </li>	
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li> <a href="{% url 'pagina_principal' %}">Cerrar Sesión</a> </li>	 
+
+             </ul>
+        </nav>
+    </div>
+    
+    <ul class="Texto5">
+                                    
+        <textos2>Bienvenido amigo(a) adoptante gracias por ingresar a nuestro sitio web, te presentamos algunos de nuestros perritos dispuestos a darte amor y felicidad.</textos2>     
+        <br>
+        <br>
+        <br>                                       
+       <img src="{% static 'img3/perro1.jpg' %}" width="300" height="200"></a>
+       <label><input type="radio" id="cbox1" name="color" value="first_checkbox"> Labrador </label><br>      
+       <br>
+       <br>  
+       <img src="{% static 'img3/perro2.jpg' %}" width="300" height="200"></a>
+      <label><input type="radio" id="cbox1" name="color" value="first_checkbox"> Pastor </label><br>    
+      <br>
+      <br>                                       
+     <img src="{% static 'img3/perro3.jpg' %}" width="300" height="200"></a>
+     <label><input type="radio" id="cbox1" name="color" value="first_checkbox"> Labrador </label><br>    
+     <br>
+     <br>                                       
+    <img src="{% static 'img3/perro4.jpg' %}" width="300" height="200"></a>
+    <label><input type="radio" id="cbox1" name="color" value="first_checkbox"> Golden Retriever </label><br>    
+    <br>
+     <br>                                       
+    <img src="{% static 'img3/perro5.jpg' %}" width="300" height="200"></a>
+    <label><input type="radio" id="cbox1" name="color" value="first_checkbox"> Boxer</label><br>    
+    <br>
+    <br>  
+    <form  method="POST">
+    {% csrf_token %} 
+    <label class="labeeeel" for="name">Nombre Mascota:</label>
+    <input type="text" class="redondeado" name="nombreperroadop" size="30" maxlength="30">
+    <br>
+    <label class="labeeeel" for="name">_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________</label>
+    <br>
+    <br>
+    <label class="labeeeel" for="name">Correo:</label> <br>
+    <input type="text" class="redondeado" name="correoadop" size="30" maxlength="30"> 
+    <br>
+    <label class="labeeeel" for="name">Rut:</label> <br>
+    <input type="text" class="redondeado" name="rutadop" size="30" maxlength="30">
+    <br>
+    <label class="labeeeel" for="name">Direccion:</label> <br>
+    <input type="text" class="redondeado" name="direccionadop" size="30" maxlength="30">
+    <br>
+    <label class="labeeeel" for="name">Telefono:</label> <br>
+    <input type="text" class="redondeado" name="teleadop" size="30" maxlength="30">
+    <br>
+    <br>  
+    <br>
+               
+        <td colspan="2" align="center"><input   style='width:150px; height:40px; ;' class="redondeado" type="submit" value="Solicitar Adopción" ></td>
+    </form>
+    <br>
+    <br>  
+    <br>
+    <br>  
+    <br>
+    <br>  
+    <br>
+    <br>  
+    <br>
+    <br>  
+    <br>
+    <br>  
+    <br>
+    <br>  
+    <br>
+    <br>  
+            </ul>
+
+    </body>
+    </html>
+

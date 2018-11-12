@@ -1,0 +1,330 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>    
+    <title>Mis Perris</title>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static 'css/estilos.css' %}" type="text/css">
+</head>
+
+<body>
+    
+    <div id="Principal">
+    	
+    	<img src="{% static 'img/logo.png' %}"  alt="Logotipo"> 
+
+        <nav>
+	        <ul class="selecciones">
+               <li> <a href="{% url 'pagina_principal' %}">inicio</a> </li>
+               <li> <a href="{% url 'pagina_quienessomos' %}">quienes somos</a> </li>
+			   <li> <a href="{% url 'pagina_servicios' %}">servicios</a> </li>
+               <li> <a href="{% url 'pagina_contactanos' %}">contactanos</a> </li>	
+               <li> <a href="{% url 'pagina_agregarperro' %}">Agregar Perro</a> </li>	 
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <li> <a href="{% url 'login' %}">Iniciar Sesión</a> </li>
+		    </ul>
+        </nav>
+    </div>
+   
+	
+    <div id="LogoPerro">
+        <div class="slider">
+                <ul>
+                        <li><h3>Floki</h3> <p>Tan suavecito como un peluche</p><img src="{% static 'img/perros1.jpg' %}" alt="" ></li>           
+                        <li><h3>Margarita</h3> <p>Tierna,cariñosa y dormilona</p><img src="{% static 'img/perros2.jpg' %}" alt="" ></li>
+                        <li><h3>Apolo</h3> <p>Rudo como el dueño jaja</p><img src="{% static 'img/perros3.jpg' %}" alt="" ></li>
+                        <li><h3>Kasan</h3> <p>fiel, valiente y leal</p><img src="{% static 'img/perros4.jpg' %}" alt="" ></li>
+                </ul>
+            </div>
+    </div>
+
+    <div id="LogoComunicacion"> 
+        <img src="{% static 'img/facebook.png' %}" width="50" height="50">
+        <img src="{% static 'img/google.png' %}" width="50" height="50"> 
+        <img src="{% static 'img/instagram.png' %}" width="50" height="50">     
+        <img src="{% static 'img/correo.png' %}" width="54" height="54"> 	    
+    </div>
+
+    <div id="InfoContacto">
+        <pre id="numero">  +56 9 98765431                                                  Rescate y adopción de perros callejeros </pre>
+    </div>
+
+    <div id="Extra1">
+        <nav>
+
+        <ul class="Texto1">
+                                
+    <h1>RESCATE</h1>
+                    
+                    ETAPA UNO
+        <br>
+                    _________
+        <br>
+        <br>
+        <br>
+                    Rescatamos perros en situación de peligro y/o abandono. Los rehabilitamos y los 
+        <br>
+                    preparamos para buscarles un hogar.
+        <br>
+        <br>
+        <br>
+        <img src="{% static 'img/rescate.png' %}" width="400" height="220">
+        </ul>
+        </nav>
+    </div>
+       
+
+    <div id="Extra2">
+
+        <ul class="Texto2">
+        <img src="{% static 'img/crowfunding.png' %}" width="400" height="300">
+        <h1>CROWDFUNDING</h1>                    
+                    FINANCIAMIENTO
+        <br>
+                    _________
+        <br>
+        <br>
+                    Sigue nuestras redes sociales para informarte acerca de las diversas campañas y
+        <br>
+                    actividades que realizamos para obtener financiamiento para seguir ayudando.   
+        </ul>
+        <br>
+        <ul class="Boton">
+            <a style="border:2.45px solid black; padding: 9px; text-decoration: none; font-weight: bold; ">CAMPAÑAS</a>      
+        </ul>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <br>
+    <br><br>
+    <br>
+    <br>
+        <br>
+
+            <ul class="galeria">
+                    <li><a href="#Img1"><img src="{% static 'img2/misperris1.jpg' %}" ></a></li>
+                    <li><a href="#Img2"><img src="{% static 'img2/misperris2.png' %}" ></a></li>
+                    <li><a href="#Img3"><img src="{% static 'img2/misperris3.jpg' %}" ></a></li>
+                    <li><a href="#Img4"><img src="{% static 'img2/misperris4.jpg' %}" ></a></li>
+                    <li><a href="#Img5"><img src="{% static 'img2/misperris5.jpg' %}" ></a></li>
+                    <li><a href="#Img6"><img src="{% static 'img2/misperris6.jpg' %}" ></a></li>
+                    <li><a href="#Img7"><img src="{% static 'img2/misperris7.jpg' %}" ></a></li>
+                    <li><a href="#Img7"><img src="{% static 'img2/misperris8.jpg' %}" ></a></li>
+                    <li><a href="#Img7"><img src="{% static 'img2/misperris9.jpg' %}" ></a></li>
+                    <li><a href="#Img7"><img src="{% static 'img2/misperris10.jpg' %}" ></a></li>
+                    <li><a href="#Img7"><img src="{% static 'img2/misperris11.jpg' %}" ></a></li>
+                    <li><a href="#Img7"><img src="{% static 'img2/misperris12.jpg' %}" ></a></li>
+                    <li><a href="#Img7"><img src="{% static 'img2/misperris13.jpg' %}" ></a></li>
+
+            </ul>
+    
+        
+        
+        <div class="modal" id="Img1">       }
+                <br>
+                <br>
+                <br>
+            <br>
+        <div class="imagen">
+            
+            <a href="#Img13">&#60;</a>
+            <a href="#Img2"><img src="{% static 'img2/misperris1.jpg' %}" alt=""></a>
+            <a href="#Img2">></a>
+        </div>
+        <a class="Cerrar" href="">X</a>
+        <h3>Aquiles</h3>
+        <textoh333 style="margin: 50px 800px 0px; float: left; padding: 0 0% 0 1%">Edad: 5 meses Sexo: Macho Descripción: Adorable, valiente  y fiel Aquiles</textoh333>        
+        
+        </div>
+            <div class="modal" id="Img2">
+                    <br>
+                    <br>
+                    <br>
+                <br>
+            <div class="imagen">
+                    <a href="#Img1">&#60;</a>
+                    <a href="#Img3"><img src="{% static 'img2/misperris2.png' %}" alt=""></a>
+                    <a href="#Img3">></a>
+            </div>
+            <a class="Cerrar" href="">X</a>
+            <h3>Duke</h3>
+        <textoh333 style="margin: 50px 800px 0px; float: left; padding: 0 0% 0 1%"> Edad: 3 años Sexo: Macho Descripción: Grande, peludo y jugueton</textoh333>     
+            </div>
+        
+            <div class="modal" id="Img3">
+                    <br>
+                    <br>
+                    <br>
+                <br>
+            <div class="imagen">
+            <a href="#Img2">&#60;</a>
+            <a href="#Img4"><img src="{% static 'img2/misperris3.jpg' %}" alt=""></a>
+            <a href="#Img4">></a>
+            </div>
+            <a class="Cerrar" href="">X</a>
+            <h3>Dana</h3>
+            <textoh333 style="margin: 50px 800px 0px; float: left; padding: 0 0% 0 1%"> Edad: 6 meses Sexo: Hembra  Descripción: Cariñosa, pelaje suave y dormilona</textoh333>     
+            </div>
+        
+            <div class="modal" id="Img4">
+                    <br>
+                    <br>
+                    <br>
+                <br>
+            <div class="imagen">
+            <a href="#Img3">&#60;</a>
+            <a href="#Img5"><img src="{% static 'img2/misperris4.jpg' %}" alt=""></a>
+            <a href="#Img5">></a>
+            </div>
+            <a class="Cerrar" href="">X</a>
+            <h3>Lucky</h3>
+            <textoh333 style="margin: 50px 800px 0px; float: left; padding: 0 0% 0 1%">Edad: 3 meses  Sexo: Macho Descripción: Pequeño, ojos bellos y cuidadoso</textoh333>     
+            </div>
+        
+            <div class="modal" id="Img5">
+                    <br>
+                    <br>
+                    <br>
+                <br>
+            <div class="imagen">
+            <a href="#Img4">&#60;</a>
+            <a href="#Img6"><img src="{% static 'img2/misperris5.jpg' %}" alt=""></a>
+            <a href="#Img6">></a>
+            </div>
+            <a class="Cerrar" href="">X</a>
+            <h3>Estrella</h3>
+            <textoh333 style="margin: 50px 800px 0px; float: left; padding: 0 0% 0 1%">Edad: 4 años  Sexo: Hembra Descripción:  Blanca, ágil y  grande</textoh333>     
+            </div>
+        
+            <div class="modal" id="Img6">
+                    <br>
+                    <br>
+                    <br>
+                <br>
+            <div class="imagen">
+            <a href="#Img5">&#60;</a>
+            <a href="#Img7"><img src="{% static 'img2/misperris6.jpg' %}" alt=""></a>
+            <a href="#Img7">></a>
+            </div>
+            <a class="Cerrar" href="">X</a>
+            <h3>Drako</h3>
+            <textoh333 style="margin: 50px 800px 0px; float: left; padding: 0 0% 0 1%">Edad: 7 años   Sexo: Macho Descripción: Fuerte, grande y cuidadoso</textoh333>     
+            </div>
+        
+            <div class="modal" id="Img7">
+                    <br>
+                    <br>
+                    <br>
+                <br>
+                    <div class="imagen">
+                    <a href="#Img6">&#60;</a>
+                    <a href="#Img8"><img src="{% static 'img2/misperris7.jpg' %}" alt=""></a>
+                    <a href="#Img8">></a>
+                    </div>
+                    <a class="Cerrar" href="">X</a>
+                    <h3>Tara</h3>
+            <textoh333 style="margin: 50px 800px 0px; float: left; padding: 0 0% 0 1%">Edad: 3 años  Sexo: Hembra Descripción: Peluda, dormilona y  juguetona</textoh333>     
+            </div>
+            
+            <div class="modal" id="Img8">
+                    <br>
+                    <br>
+                    <br>
+                <br>
+                    <div class="imagen">
+                    <a href="#Img7">&#60;</a>
+                    <a href="#Img9"><img src="{% static 'img2/misperris8.jpg' %}" alt=""></a>
+                    <a href="#Img9">></a>
+                    </div>
+                    <a class="Cerrar" href="">X</a>
+                    <h3>Zoe</h3>
+            <textoh333 style="margin: 50px 800px 0px; float: left; padding: 0 0% 0 1%">Edad: 3 meses  Sexo: Hembra Descripción: Dulce, pequeña y regalona</textoh333>     
+            </div>
+        
+            <div class="modal" id="Img9">
+                    <br>
+                    <br>
+                    <br>
+                <br>
+                    <div class="imagen">
+                    <a href="#Img8">&#60;</a>
+                    <a href="#Img10"><img src="{% static 'img2/misperris9.jpg' %}" alt=""></a>
+                    <a href="#Img10">></a>
+                    </div>
+                    <a class="Cerrar" href="">X</a>  
+                    <h3>Rocky</h3>
+            <textoh333 style="margin: 50px 800px 0px; float: left; padding: 0 0% 0 1%">Edad: 7 años  Sexo: Macho Descripción: Dormilon, pequeño y gordito</textoh333>                       
+            </div>
+        
+            <div class="modal" id="Img10">
+                    <br>
+                    <br>
+                    <br>
+                <br>
+                    <div class="imagen">
+                    <a href="#Img9">&#60;</a>
+                    <a href="#Img11"><img src="{% static 'img2/misperris10.jpg' %}" alt=""></a>
+                    <a href="#Img11">></a>
+                    </div>
+                    <a class="Cerrar" href="">X</a>     
+                    <h3>Chester</h3>
+            <textoh333 style="margin: 50px 800px 0px; float: left; padding: 0 0% 0 1%">Edad: 4 meses  Sexo: Macho Descripción: Rápido, juguetón y hiperactivo</textoh333>                    
+            </div>
+        
+            <div class="modal" id="Img11">
+                    <br>
+                    <br>
+                    <br>
+                <br>
+                    <div class="imagen">
+                    <a href="#Img10">&#60;</a>
+                    <a href="#Img12"><img src="{% static 'img2/misperris11.jpg' %}" alt=""></a>
+                    <a href="#Img12">></a>
+                    </div>
+                    <a class="Cerrar" href="">X</a>     
+                    <h3>Perla</h3>
+            <textoh333 style="margin: 50px 800px 0px; float: left; padding: 0 0% 0 1%">Edad: 3 meses  Sexo: Hembra Descripción:Bella, pequeña y cuidadosa</textoh333>                    
+            </div>
+        
+            <div class="modal" id="Img12">
+                    <br>
+                    <br>
+                    <br>
+                <br>
+                    <div class="imagen">
+                    <a href="#Img11">&#60;</a>
+                    <a href="#Img13"><img src="{% static 'img2/misperris12.jpg' %}" alt=""></a>
+                    <a href="#Img13">></a>
+                    </div>
+                    <a class="Cerrar" href="">X</a>  
+                    <h3>Pelusa</h3>
+            <textoh333 style="margin: 50px 800px 0px; float: left; padding: 0 0% 0 1%">Edad: 8 meses  Sexo: Hembra Descripción:  Pequeña, tierna y de poco pelaje</textoh333>                       
+            </div>
+        
+            <div class="modal" id="Img13">
+                    <br>
+                    <br>
+                    <br>
+                <br>
+                    <div class="imagen">
+                    <a href="#Img12">&#60;</a>
+                    <a href="#Img1"><img src="{% static 'img2/misperris13.jpg' %}" alt=""></a>
+                    <a href="#Img1">></a>
+                    </div>
+                    <a class="Cerrar" href="">X</a>     
+                    <h3>Killer</h3>
+            <textoh333 style="margin: 50px 800px 0px; float: left; padding: 0 0% 0 1%">Edad: 5 años Sexo: Macho Descripción: Grande, fuerte y con gran apetito</textoh333>                    
+            </div>
+
+    <footer>
+        <article>
+            <textofinal>Desarrollo Web y Mobile</textofinal>
+        </article>
+    </footer>
+    </div>
+
+</body>
+</html>

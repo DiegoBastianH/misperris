@@ -1,0 +1,179 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>    
+    <title>Mis Perris</title>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/estilos.css' %}" type="text/css">
+</head>
+
+<body>
+    
+    <div id="Principal">
+    	
+    	<img src="{% static 'img/logo.png' %}"  alt="Logotipo"> 
+
+        <nav>
+                <ul class="selecciones">
+                        <li> <a href="{% url 'pagina_principal' %}">inicio</a> </li>
+                        <li> <a href="{% url 'pagina_quienessomos' %}">quienes somos</a> </li>
+                                    <li> <a href="{% url 'pagina_servicios' %}">servicios</a> </li>
+                        <li> <a href="{% url 'pagina_contactanos' %}">contactanos</a> </li>	
+                        <li> <a href="{% url 'pagina_agregarperro' %}">Agregar Perro</a> </li>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <li> <a href="{% url 'login' %}">Iniciar Sesión</a> </li> 	 
+                             </ul>
+        </nav>
+    </div>
+   
+	
+    <div id="LogoPerro">
+        <div class="slider">
+                <ul>
+                                <li><h3>Floki</h3> <p>Tan suavecito como un peluche</p><img src="{% static 'img/perros1.jpg' %}" alt="" ></li>           
+                                <li><h3>Margarita</h3> <p>Tierna,cariñosa y dormilona</p><img src="{% static 'img/perros2.jpg' %}" alt="" ></li>
+                                <li><h3>Apolo</h3> <p>Rudo como el dueño jaja</p><img src="{% static 'img/perros3.jpg' %}" alt="" ></li>
+                                <li><h3>Kasan</h3> <p>fiel, valiente y leal</p><img src="{% static 'img/perros4.jpg' %}" alt="" ></li>
+                </ul>
+            </div>
+    </div>
+
+    <div id="LogoComunicacion"> 
+        <img src="{% static 'img/facebook.png' %}" width="50" height="50">
+        <img src="{% static 'img/google.png' %}" width="50" height="50"> 
+        <img src="{% static 'img/instagram.png' %}" width="50" height="50">     
+        <img src="{% static 'img/correo.png' %}" width="54" height="54"> 	    
+    </div>
+
+    <div id="InfoContacto">
+        <pre id="numero">  +56 9 98765431                                                  Rescate y adopción de perros callejeros </pre>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div id="PriContactos"> 
+<div id="Contactos">
+                <br>
+                <br>
+                <br>
+                <td>
+                                <label class="labels22" for="name">Formulario</label>
+                        </td>
+                <br>
+    <br>
+    
+
+            <table>
+                        <form method="POST" >
+                                        {% csrf_token %}
+                    <tr>
+                            <td>                                   
+                                    <label class="labels" for="name">Correo:</label>
+                            </td>
+                            <td>
+                                    
+                                <div class="input-group">
+                                        <input type="text" class="redondeado" name="correopers" size="30" maxlength="30">
+                                </div>
+                                    
+                            </td>
+                    </tr>
+
+                    <tr>
+                            <td>                                  
+                                    <label class="labels" for="name">Rut:</label>
+                            </td>
+                            <td>
+                                        <div class="input-group">
+                                                        <input type="text" class="redondeado" name="ruttt" size="30" maxlength="9"> 
+                                        </div>
+                                    
+                                   
+                            </td>
+                    </tr>
+                   <tr>
+                        <td>
+                                        <label class="labels" for="name">Nombre Completo:</label>
+                                               </td>
+                    <td>
+
+                              <div class="input-group ">
+                                <input type="text" class="redondeado" name="nombrepersona" size="30" maxlength="25">                       
+                                </td>
+
+
+                    <tr>
+                            <td>                                  
+                                    <label class="labels" for="name">Fecha Nacimiento:</label>
+                            </td>
+                            <td>
+                                        <div class="input-group">
+                                                        <input type="date" class="redondeado" id="fecha" name="Fechapers" >
+                                        </div>
+                                   
+                            </td>
+                    </tr>
+
+                    <tr>
+                        <td>                                  
+                                <label class="labels" for="name">Telefono:</label>
+                        </td>
+                        <td>
+                                    <div class="input-group">
+                                        <input type="text" class="redondeado" name="telef" size="30" maxlength="9">
+                                                    
+                                    </div>
+                               
+                               
+                        </td>
+                </tr>
+                    </tr>
+                    <tr>
+                        <td>                                  
+                                <label class="labels" for="name">Dirección:</label>
+                        </td>
+                        <td>
+                                    <div class="input-group">
+                                        <input type="text" class="redondeado" name="direcc" size="30" maxlength="20">
+                                                    
+                                    </div>
+                               
+                               
+                        </td>
+                </tr>
+                    </tr>
+                 
+
+                 
+                    <tr>
+
+                              
+                            <td colspan="2" align="center"><input   style='width:100px; height:40px; ;' class="btn-submit" type="submit" value="Contactar" ></td>
+                    </tr>
+                </form>
+            </table>
+       
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+            <article>
+                <textofinal>Desarrollo Web y Mobile</textofinal>
+            </article>
+        </footer>
+        </div>
+    </body>
+    </html>

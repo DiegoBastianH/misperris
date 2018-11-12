@@ -1,0 +1,137 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>    
+    <title>Mis Perris</title>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static 'css/estilos.css' %}" type="text/css">
+</head>
+<body>
+    
+    <div id="Principal">
+    	
+    	<img src="{% static 'img/logo.png' %}"  alt="Logotipo"> 
+
+        <nav>
+            <ul class="selecciones">
+                <li> <a href="{% url 'pagina_principal' %}">inicio</a> </li>
+                <li> <a href="{% url 'pagina_quienessomos' %}">quienes somos</a> </li>
+                <li> <a href="{% url 'pagina_servicios' %}">servicios</a> </li>
+                <li> <a href="{% url 'pagina_contactanos' %}">contactanos</a> </li>	
+                <li> <a href="{% url 'pagina_agregarperro' %}">Agregar Perro</a> </li>	 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li> <a href="{% url 'login' %}">Iniciar Sesión</a> </li>
+             </ul>
+        </nav>
+    </div>
+   
+	
+    <div id="LogoPerro">
+        <div class="slider">
+            <ul>
+                <li><h3>Floki</h3> <p>Tan suavecito como un peluche</p><img src="{% static 'img/perros1.jpg' %}" alt="" ></li>           
+                <li><h3>Margarita</h3> <p>Tierna,cariñosa y dormilona</p><img src="{% static 'img/perros2.jpg' %}" alt="" ></li>
+                <li><h3>Apolo</h3> <p>Rudo como el dueño jaja</p><img src="{% static 'img/perros3.jpg' %}" alt="" ></li>
+                <li><h3>Kasan</h3> <p>fiel, valiente y leal</p><img src="{% static 'img/perros4.jpg' %}" alt="" ></li>
+</ul>
+            </div>
+    </div>
+
+    <div id="LogoComunicacion"> 
+        <img src="{% static 'img/facebook.png' %}" width="50" height="50">
+        <img src="{% static 'img/google.png' %}" width="50" height="50"> 
+        <img src="{% static 'img/instagram.png' %}" width="50" height="50">     
+        <img src="{% static 'img/correo.png' %}" width="54" height="54"> 	    
+    </div>
+
+    <nav>
+
+            <ul class="Texto5">
+                                    
+        <textos2>QUIÉNES SOMOS</textos2>                                            
+            <br>
+            ______________________________________
+            <br>
+            <br>
+                        Somos una comunidad que rescata a los animalitos en situación de calle, abandono y maltrato. Dandole una posibilidad de que tengan una familia que los quiera.
+            <br>
+            <br>
+            <br>
+            <br>           
+            <textos2>CÓMO LO HACEMOS</textos2>                      
+            <br>
+            ______________________________________
+            <br>
+            <br>
+            Buscamos familias dispuestas a darle amor y cariño a  estas hermosas criaturas, el adoptante tendrá que registrarse en nuestra pagina llenando con sus datos y respondiendo un mini test antes de la adopción.
+            <br>
+            <br>
+            <br>
+            <br>
+            <textos3>CÓMO CONTACTARNOS</textos3>        
+            <br>
+            <textos3>______________________________________</textos3>         
+            <br>
+            <br>
+            <img src="{% static 'img2/5.png' %}" style="width: 10%; float: left; padding: 0 5% 0 1%">
+            <textos4 style="margin: 45px 0px 0px; float: left; padding: 0 0% 0 1%">www.misperris.cl</textos4>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="{% static 'img2/7.png' %}" style="width: 10%; float: left; padding: 0 5% 0 1%">                           
+            <textos4 style="margin: 45px 0px 0px; float: left; padding: 0 0% 0 1%">+56 9 98765431</textos4>   
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="{% static 'img2/6.png' %}" style="width: 10%; float: left; padding: 0 5% 0 1%">
+            <textos4 style="margin: 45px 0px 0px; float: left; padding: 0 0% 0 1%">misperris@gmail.com</textos4>        
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="{% static 'img2/8.png' %}" style="width: 10%; float: left; padding: 0 5% 0 1%">                    
+            <textos4 style="margin: 45px 0px 0px; float: left; padding: 0 0% 0 1%">Av. Santa Elena 356</textos4>   
+            
+            <br>
+            <br>
+            
+
+            </ul>
+            </nav>
+
+    <br>
+    <br>
+    <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    <footer>
+            <article>
+                <textofinal>Desarrollo Web y Mobile</textofinal>
+            </article>
+        </footer>
+        </div>
+    </body>
+    </html>
+
